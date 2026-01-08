@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Letter</title>
+    <style>
+        body {
+            background: lightpink;
+            font-family: 'Times New Roman';
+            text-align: center;
+            margin-top: 100px;
+        }
+        .card {
+            background: white;
+            padding: 150px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            cursor: pointer;
+        }
+        .left {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-radius: 10px;
+            margin-left: 34px;
+            margin-top: auto;
+            border-top: 185px solid transparent;
+            border-bottom: 185px solid transparent;
+            border-left: 299px solid #fff34d;
+        }
+        .top {
+            width: 252px;
+            height: 0;
+            margin: auto;
+            border-left: 160px solid transparent;
+            border-right: 160px solid transparent;
+            border-bottom: 120px solid #e0e0e0;
+            display: none;
+        }
+        .message {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="left"></div>
+    <div class="card"onclick="buka()">
+        <h2>open</h2>
+    </div>
+
+    <div class="message">
+        <h1>hbd</h1>
+        <p>sigma</p>
+    </div>
+
+    <script>
+    function buka() {
+        document.querySelector('.card').style.display = 'none';
+        document.querySelector('.message').style.display = 'block';
+    }
+    </script>
+</body>
+</html>
